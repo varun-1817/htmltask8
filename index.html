@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK - 8</title>
+    <style>
+        h1
+        {
+            color: blue;
+            text-align: center;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 999px;
+            height: 100px;
+            margin: auto;
+        }
+        
+        td{
+        border: 1px solid black;
+        }
+
+        .id2
+        {
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        input[type=text] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type=number] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type=password] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .id
+        {
+            text-align: right;
+        }
+
+        div
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <form>
+                <h1>Registration form</h1>
+                <tr>
+                    <td class="id2"><label for="fname">First Name</label> </td>
+                    <td class="id1"><input type="text" id="fname" name="fname"></td>  
+                </tr>
+                <tr>
+                    <td class="id2"><label for="lname">Last Name</label></td>
+                    <td class="id1"><input type="text" id="lname" name="lname"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label id="email">Email</label></td>
+                    <td class="id1"><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label id="password">Password</label></td>
+                    <td class="id1"><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label id="re-enter password">Re-enter Password</label></td>
+                    <td class="id1"><input type="password" id="re-enter password" name="re-enter password"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Male</label><hr>
+                        <input type="radio" id="gender" name="gender">
+                        <label for="gender">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="age">Age:</label></td>
+                    <td class="id1"><input type="number" id="age" name="age"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="number">Phone Number</label></td>
+                    <td class="id1"><input type="number" id="number" name="number"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label>Address</label></td>
+                    <td><textarea rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="state">State</label></td>
+                    <td class="id1"><input type="text" id="state" name="state"></td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="country">Country</label></td>
+                    <td>
+                        <select id="country">
+                            <option value="text">Choose your country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id2"><label for="languages">Languages known</label></td>
+                    <td>
+                        <input type="checkbox" id="languages" name="languages">
+                        <label for="English">English</label>
+                        <input type="checkbox" id="languages" name="languages">
+                        <label for="English">Kannada</label>
+                        <input type="checkbox" id="languages" name="languages">
+                        <label for="English">Hindi</label>
+                        <input type="checkbox" id="languages" name="languages">
+                        <label for="English">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="test" name="test">Hereby I declare all the given details are true
+                    </td>
+                </tr>     
+                <tr class="id">
+                    <td colspan="2">
+                        Log in to <a href="https://ethnus.com/">Ethnus</a>website
+                    </td>
+                </tr>     
+            </form> 
+        </tr>
+    </table>
+    <br>
+    <div>
+        <button id="register">Register</button>
+    </div>
+</body>
+</html>
